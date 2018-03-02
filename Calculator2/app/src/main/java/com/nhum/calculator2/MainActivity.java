@@ -7,9 +7,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    long temp=0,num=0,num2=0,num3=0;
-    double divnum = 0;
+    long temp=0,num=0,num2=0;
     int stage=0;
+    double divtemp = 0.0;
     boolean plus=false,min=false,div=false,mul=false;
 
     Button ButtonSubmit;
@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     Button Button8;
     Button Button9;
     Button Button0;
-    Button ButtonDel;
     Button ButtonPlus;
     Button ButtonMin;
     Button ButtonMul;
@@ -48,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
          Button8 = (Button) findViewById(R.id.button8);
          Button9 = (Button) findViewById(R.id.button9);
          Button0 = (Button) findViewById(R.id.button0);
-         ButtonDel = (Button) findViewById(R.id.buttonReset);
          ButtonPlus = (Button) findViewById(R.id.buttonPlus);
          ButtonMin = (Button) findViewById(R.id.buttonMin);
          ButtonMul = (Button) findViewById(R.id.buttonMul);
@@ -70,9 +68,6 @@ public class MainActivity extends AppCompatActivity {
                     temp = 0;
                     tvOutput.setText(String.valueOf(num2));
                 }
-
-
-
             }
         });
         Button2.setOnClickListener(new View.OnClickListener() {
@@ -89,9 +84,6 @@ public class MainActivity extends AppCompatActivity {
                     temp = 0;
                     tvOutput.setText(String.valueOf(num2));
                 }
-
-
-
             }
         });
         Button3.setOnClickListener(new View.OnClickListener() {
@@ -108,9 +100,6 @@ public class MainActivity extends AppCompatActivity {
                     temp = 0;
                     tvOutput.setText(String.valueOf(num2));
                 }
-
-
-
             }
         });
         Button4.setOnClickListener(new View.OnClickListener() {
@@ -127,9 +116,6 @@ public class MainActivity extends AppCompatActivity {
                     temp = 0;
                     tvOutput.setText(String.valueOf(num2));
                 }
-
-
-
             }
         });
         Button5.setOnClickListener(new View.OnClickListener() {
@@ -146,9 +132,6 @@ public class MainActivity extends AppCompatActivity {
                     temp = 0;
                     tvOutput.setText(String.valueOf(num2));
                 }
-
-
-
             }
         });
         Button6.setOnClickListener(new View.OnClickListener() {
@@ -165,9 +148,6 @@ public class MainActivity extends AppCompatActivity {
                     temp = 0;
                     tvOutput.setText(String.valueOf(num2));
                 }
-
-
-
             }
         });
         Button7.setOnClickListener(new View.OnClickListener() {
@@ -184,9 +164,6 @@ public class MainActivity extends AppCompatActivity {
                     temp = 0;
                     tvOutput.setText(String.valueOf(num2));
                 }
-
-
-
             }
         });
         Button8.setOnClickListener(new View.OnClickListener() {
@@ -203,9 +180,6 @@ public class MainActivity extends AppCompatActivity {
                     temp = 0;
                     tvOutput.setText(String.valueOf(num2));
                 }
-
-
-
             }
         });
         Button9.setOnClickListener(new View.OnClickListener() {
@@ -222,9 +196,6 @@ public class MainActivity extends AppCompatActivity {
                     temp = 0;
                     tvOutput.setText(String.valueOf(num2));
                 }
-
-
-
             }
         });
         Button0.setOnClickListener(new View.OnClickListener() {
@@ -241,21 +212,9 @@ public class MainActivity extends AppCompatActivity {
                     temp = 0;
                     tvOutput.setText(String.valueOf(num2));
                 }
-
-
-
             }
         });
 
-        ButtonReset.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                num = 0;
-                num2 = 0;
-                stage = 0;
-                tvOutput.setText(String.valueOf(num));
-
-            }
-        });
         ButtonPlus.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(stage==0){
@@ -410,6 +369,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        ButtonReset.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                num = 0;
+                num2 = 0;
+                stage = 0;
+                tvOutput.setText(String.valueOf(num));
+            }
+        });
     }
 }
