@@ -28,7 +28,7 @@
                 android:text="1"
                 android:textSize= "40sp"
                 android:background="#FFAAAA"
-                android:onClick="Number"
+                android:onClick="Button1"
                 />
 
             <Button
@@ -40,7 +40,7 @@
                 android:text= "2"
                 android:textSize="40sp"
                 android:background="#F44444AA"
-                android:onClick="Number"
+                android:onClick="Button2"
                 />
 
             <Button
@@ -54,7 +54,7 @@
                 android:text="3"
                 android:textSize="40sp"
                 android:background="#F0000D"
-                android:onClick="Number"
+                android:onClick="Button3"
                 />
         </LinearLayout>
         <LinearLayout
@@ -73,7 +73,7 @@
                 android:text="4"
                 android:textSize= "40sp"
                 android:background="#FFAAAA"
-                android:onClick="Number"
+                android:onClick="Button4"
                 />
 
             <Button
@@ -85,7 +85,7 @@
                 android:text= "5"
                 android:textSize="40sp"
                 android:background="#F44444AA"
-                android:onClick="Number"
+                android:onClick="Button5"
                 />
 
             <Button
@@ -99,7 +99,7 @@
                 android:text="6"
                 android:textSize="40sp"
                 android:background="#F0000D"
-                android:onClick="Number"
+                android:onClick="Button6"
                 />
         </LinearLayout>
         <LinearLayout
@@ -118,7 +118,7 @@
                 android:text="7"
                 android:textSize= "40sp"
                 android:background="#FFAAAA"
-                android:onClick="Number"
+                android:onClick="Button7"
                 />
 
             <Button
@@ -130,7 +130,7 @@
                 android:text= "8"
                 android:textSize="40sp"
                 android:background="#F44444AA"
-                android:onClick="Number"
+                android:onClick="Button8"
                 />
 
             <Button
@@ -144,7 +144,7 @@
                 android:text="9"
                 android:textSize="40sp"
                 android:background="#F0000D"
-                android:onClick="Number"
+                android:onClick="Button9"
                 />
         </LinearLayout>
         <LinearLayout
@@ -163,7 +163,7 @@
                 android:text="0"
                 android:textSize= "40sp"
                 android:background="#FFAAAA"
-                android:onClick="Number"
+                android:onClick="Button0"
                 />
         </LinearLayout>
 
@@ -181,7 +181,7 @@
                 android:background="#F0000D"
                 android:text="+"
                 android:textSize="20sp"
-                android:onClick="Operation"
+                android:onClick="ButtonPlus"
                 />
 
             <Button
@@ -195,7 +195,7 @@
                 android:background="#F0000D"
                 android:text="-"
                 android:textSize="20sp"
-                android:onClick="Operation"
+                android:onClick="ButtonMin"
                 />
 
             <Button
@@ -209,7 +209,7 @@
                 android:background="#F0000D"
                 android:text="*"
                 android:textSize="20sp"
-                android:onClick="Operation"
+                android:onClick="ButtonMul"
                 />
 
             <Button
@@ -224,7 +224,7 @@
                 android:background="#F0000D"
                 android:text="/"
                 android:textSize="20sp"
-                android:onClick="Operation"
+                android:onClick="ButtonDiv"
                 />
 
             <android.support.constraint.ConstraintLayout
@@ -259,7 +259,7 @@
         android:text="reset"
         android:textSize="40dp"
         android:layout_gravity="bottom|left"
-        android:onClick="Reset"
+        android:onClick="ButtonReset"
         />
     <Button
         android:id= "@+id/buttonSubmit"
@@ -269,7 +269,7 @@
         android:layout_margin= "5dp"
         android:textSize="40dp"
         android:layout_gravity="bottom|right"
-        android:onClick= "Calculate"/>
+        android:onClick= "ButtonSubmit"/>
 
 
 </FrameLayout>
